@@ -1,3 +1,10 @@
+/*
+Script for table creation.
+This is responsible for creating all the tables belonging to the database.
+It creates all the columns for each table, as well as setting all their constraints.
+The tables are created in order of their dependencies, with tables referenced by other tables being created first.
+*/
+
 USE task_buddy;
 
 CREATE TABLE `user` (
